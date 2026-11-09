@@ -1,14 +1,7 @@
 """Run a small Grey Wolf Optimizer experiment."""
 
-import math
-
 from metaheuristics_algorithms.bioinspired import GreyWolfOptimizer
-
-def rastrigin(position: list[float]) -> float:
-  A = 10
-  return A * len(position) + sum(
-    value**2 - A * math.cos(2 * math.pi * value) for value in position
-  )
+from scripts.examples.objective_functions_problems import rastrigin
 
 
 def main() -> None:

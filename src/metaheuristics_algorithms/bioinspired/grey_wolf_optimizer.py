@@ -1,6 +1,4 @@
-"""
-  Grey Wolf Optimizer.
-"""
+"""Grey Wolf Optimizer (GWO)"""
 
 import random
 from typing import Callable, Optional, TypeAlias
