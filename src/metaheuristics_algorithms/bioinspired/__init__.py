@@ -3,5 +3,6 @@
 from .grey_wolf_optimizer import (
     GreyWolfOptimizer,
 )
+from .genetic_algorithm import GeneticAlgorithm
 
-__all__ = ["GreyWolfOptimizer"]
+__all__ = ["GeneticAlgorithm", "GreyWolfOptimizer"]

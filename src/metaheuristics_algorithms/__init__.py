@@ -1,5 +1,5 @@
 """Reusable metaheuristic optimization algorithms."""
 
-from .bioinspired import GreyWolfOptimizer
+from .bioinspired import GeneticAlgorithm, GreyWolfOptimizer
 
-__all__ = ["GreyWolfOptimizer"]
+__all__ = ["GeneticAlgorithm", "GreyWolfOptimizer"]
