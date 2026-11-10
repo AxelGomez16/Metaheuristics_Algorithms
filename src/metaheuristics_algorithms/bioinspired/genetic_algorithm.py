@@ -163,6 +163,9 @@ class GeneticAlgorithm:
     self.population_fitness_history = []
     self.iterations = 0
 
+    # Initialize the positions of the agents (Individuals)
+
+    # Step 1: Initialize population of search agents (Individuals)
     population = [
       self._random_position() for _ in range(self.population_size)
     ]
@@ -188,8 +191,12 @@ class GeneticAlgorithm:
 
       next_population = [population[best_id].copy()]
       while len(next_population) < self.population_size:
+
+        # Step 2: Select parents
         first = self._select_parent_tournament(population, fitness)
         second = self._select_parent_tournament(population, fitness)
+
+        # Step 3: Crossover and mutation for a child and add to next population
         next_population.append(self._create_child(first, second))
       population = next_population
       fitness = [self.fitness_function(position) for position in population]
