@@ -18,8 +18,8 @@ def main() -> None:
   print(f"Best position: {gwo_optimizer.best_position}")
   print(f"Best fitness: {gwo_optimizer.best_fitness}")
 
-  gwo_optimizer.visualize_movement(delay_interval=250)
-  gwo_optimizer.visualize_movement_html()
+  # gwo_optimizer.visualize_movement(delay_interval=250)
+  # gwo_optimizer.visualize_movement_html()
   gwo_optimizer.visualize_charts()
 
 
