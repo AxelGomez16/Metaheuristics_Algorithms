@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaheuristics-algorithms"
+version = "0.1.0"
+description = "Metaheuristics algorithms and runnable examples"
+requires-python = ">=3.10"
+dependencies = ["numpy", "matplotlib", "plotly"]
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["metaheuristics_algorithms*", "visualization*", "scripts*"]
+namespaces = true
